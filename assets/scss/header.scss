@@ -1,0 +1,118 @@
+header {
+  position: relative;
+  color: rgba(31, 46, 53, 0.8);
+  .header-wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 22px;
+    gap: 80px;
+    // figma has this 108 but if I do so shuffle logo overflows
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+nav {
+  margin-right: 0px;
+  display: flex;
+  ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    li:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+
+li {
+  a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(31, 46, 53, 0.8);
+  }
+  button {
+    width: 77px;
+    border: none;
+    background-color: transparent;
+    color: rgba(31, 46, 53, 0.8);
+  }
+  .about::after,
+  .client::after {
+    content: url(../../assets/img/chevron_down.svg);
+    margin-left: 8px;
+  }
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 0px;
+
+  button {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  button:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  .home {
+    background-image: url(../../assets/img/Union.svg);
+  }
+  .mail {
+    background-image: url(../../assets/img/mail.svg);
+  }
+  .shuffle {
+    background-image: url(../../assets/img/shuffle.svg);
+  }
+}
+
+.dropdown {
+  position: relative;
+  button:hover,
+  &.active > button {
+    background-color: rgba(243, 241, 241, 0.4);
+    border-radius: 0.25rem;
+  }
+  &.active > button + .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: calc(100% +0.25rem);
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  width: max-content;
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  transform: translateY(-10px);
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    li {
+      padding: 0.25rem;
+      a:hover {
+        background-color: rgba(243, 241, 241, 0.4);
+        color: rgb(41, 41, 41);
+        padding: 0.25rem;
+      }
+    }
+  }
+}

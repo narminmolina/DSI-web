@@ -1,2 +1,12 @@
-body {background-color: rgb(196, 218, 224);
-font-size: 40px;}
+@import 'header.scss';
+
+.container {
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body { 
+font-family: 'Roboto', sans-serif;    margin: 0px;
+}
+

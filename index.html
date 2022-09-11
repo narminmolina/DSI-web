@@ -5,10 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DSI Web Landing</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap-reboot.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap-reboot.min.css"
+    />
     <link rel="stylesheet" href="./dist/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
   </head>
   <body>
-    Hello World
+    <header>
+      <div class="container">
+        <div class="header-wrapper">
+          <a href="/" title="Home" class="logo-link">
+            <img class="logo" src="./assets/img/logo.svg" alt="Logo" />
+          </a>
+          <nav>
+            <ul>
+              <li>Services</li>
+              <li>Product</li>
+              <li>Technology</li>
+              <li class="dropdown" data-dropdown="">
+                <button class="about" data-dropdown-button>About</button>
+                <div class="dropdown-menu">
+                  <ul>
+                    <li><a href=""> DSI </a></li>
+                    <li><a href="">DSI Culture </a></li>
+                    <li><a href="">Contact Us </a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="dropdown" data-dropdown>
+                <button class="client" data-dropdown-button>Client</button>
+                <div class="dropdown-menu">
+                  <ul>
+                    <li><a href=""> Bank Tabuga Negara </a></li>
+                    <li><a href=""> Bank BPR KS</a></li>
+                    <li><a href="">Testimonials </a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>Partner</li>
+            </ul>
+            <div class="nav-actions">
+              <button class="home"></button>
+              <button class="mail"></button>
+              <button class="shuffle"></button>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <script src="./assets/script/dropdown.js" defer></script>
   </body>
 </html>

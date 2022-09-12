@@ -42,7 +42,7 @@ li {
   }
   .about::after,
   .client::after {
-    content: url(../../assets/img/chevron_down.svg);
+    content: url(../img/chevron_down.svg);
     margin-left: 8px;
   }
 }
@@ -68,13 +68,13 @@ li {
   }
 
   .home {
-    background-image: url(../../assets/img/Union.svg);
+    background-image: url(../img/Union.svg);
   }
   .mail {
-    background-image: url(../../assets/img/mail.svg);
+    background-image: url(../img/mail.svg);
   }
   .shuffle {
-    background-image: url(../../assets/img/shuffle.svg);
+    background-image: url(../img/shuffle.svg);
   }
 }
 
@@ -94,7 +94,7 @@ li {
 .dropdown-menu {
   position: absolute;
   left: 0;
-  top: calc(100% +0.25rem);
+  top: calc(100% + 0.25rem);
   padding: 0.75rem;
   border-radius: 0.25rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);

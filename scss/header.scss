@@ -1,44 +1,53 @@
 header {
-  position: relative;
+  //? position: relative;
   color: rgba(31, 46, 53, 0.8);
   .header-wrapper {
     display: flex;
     align-items: center;
-    padding-top: 22px;
-    gap: 80px;
+    justify-content: space-between;
+    //! padding-top: 22px;
+    //*
+    padding: 22px 0;
+    gap: 108px;
     // figma has this 108 but if I do so shuffle logo overflows
   }
   a {
-    text-decoration: none;
+    //? text-decoration: none;
   }
 }
 
 nav {
-  margin-right: 0px;
+  //? margin-right: 0px;
   display: flex;
   ul {
-    padding: 0;
     display: flex;
+    padding: 0;
     list-style: none;
     margin: 0px;
-    li:not(:last-child) {
-      margin-right: 50px;
-    }
+  }
+  & > ul {
+    gap: 50px;
   }
 }
 
 li {
+  // *
+  font-size: 18px;
   a {
     font-weight: 400;
-    font-size: 18px;
     line-height: 21px;
     color: rgba(31, 46, 53, 0.8);
+    &.active {
+      font-weight: 500;
+    }
   }
   button {
     width: 77px;
     border: none;
     background-color: transparent;
     color: rgba(31, 46, 53, 0.8);
+    // *
+    padding: 0;
   }
   .about::after,
   .client::after {
@@ -49,31 +58,31 @@ li {
 
 .nav-actions {
   display: flex;
+  gap: 24px;
   align-items: center;
-  margin-left: 100px;
+  margin-left: 116px;
   margin-right: 0px;
 
   button {
     background-color: transparent;
     border: 0;
     padding: 0;
-    width: 16px;
-    height: 16px;
+    width: 20px;
     background-repeat: no-repeat;
     background-size: contain;
   }
 
-  button:not(:last-child) {
-    margin-right: 24px;
-  }
-
   .home {
-    background-image: url(../img/Union.svg);
+    height: 18.6px;
+    background-image: url(../img/union.svg);
   }
   .mail {
+    height: 16px;
     background-image: url(../img/mail.svg);
   }
   .shuffle {
+    width: 16px;
+    height: 16px;
     background-image: url(../img/shuffle.svg);
   }
 }

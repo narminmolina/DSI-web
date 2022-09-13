@@ -1,0 +1,47 @@
+.footer-wrapper {
+  display: flex;
+  color: $dark-grey;
+  padding-top: 28px;
+  .address-box {
+    strong {
+      margin-top: 10px;
+      margin-bottom: 8px;
+      font-weight: 500;
+      line-height: 21px;
+      font-size: 18px;
+    }
+  }
+  address,
+  .contact-info > p {
+    font-weight: 300;
+    line-height: 24px;
+    font-size: 18px;
+  }
+  .contact-info {
+    margin: 22px 74px 0px 48px;
+    h1 {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+  .partners-logos {
+    margin-top: 46px;
+    height: 102px;
+    width: 418px;
+    background-image: url(../img/partners_logo.png);
+  }
+}
+.copyright {
+  width: 100%;
+  background-color: $red;
+  padding: 22px 0px;
+  text-align: center;
+  color: $white;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  p {
+    margin: 0px;
+  }
+}

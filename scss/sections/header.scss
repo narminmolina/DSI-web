@@ -1,0 +1,125 @@
+header {
+  color: #1f2e35;
+  box-shadow: $box-shadow;
+  .header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 0;
+    gap: 108px;
+  }
+}
+
+nav {
+  //? margin-right: 0px;
+  display: flex;
+  ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    margin: 0px;
+  }
+  & > ul {
+    gap: 50px;
+  }
+}
+
+li {
+  font-size: 18px;
+  a {
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 21px;
+    color: #1f2e35;
+    &.active {
+      font-weight: 600;
+    }
+    &:hover {
+      color: black;
+    }
+  }
+  button {
+    width: 77px;
+    border: none;
+    background-color: transparent;
+    color: #1f2e35;
+    // *
+    padding: 0;
+  }
+  .about::after,
+  .client::after {
+    content: url(../img/chevron_down.svg);
+    margin-left: 8px;
+  }
+}
+
+.nav-actions {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-left: 116px;
+  margin-right: 0px;
+
+  button {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .home {
+    height: 18.6px;
+    background-image: url(../img/union.svg);
+  }
+  .mail {
+    height: 16px;
+    background-image: url(../img/mail.svg);
+  }
+  .shuffle {
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/shuffle.svg);
+  }
+}
+
+.dropdown {
+  position: relative;
+  button:hover,
+  &.active > button {
+    background-color: rgba(243, 241, 241, 0.4);
+    border-radius: 0.25rem;
+  }
+  &.active > button + .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 4px);
+  padding: 12px;
+  border-radius: 4px;
+  box-shadow: $box-shadow;
+  background-color: $white;
+  opacity: 0;
+  width: max-content;
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  transform: translateY(-10px);
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    li {
+      padding: 4px;
+      a:hover {
+        background-color: rgba(243, 241, 241, 0.4);
+        color: rgb(41, 41, 41);
+        padding: 4px;
+      }
+    }
+  }
+}

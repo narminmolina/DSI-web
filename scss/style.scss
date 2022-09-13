@@ -1,4 +1,7 @@
-@import 'header.scss';
+@import 'helpers/variables', 'helpers/mixins';
+@import './sections/header';
+@import './sections/footer';
+
 
 .container {
   width: 1145px;

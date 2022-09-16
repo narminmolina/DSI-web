@@ -4,7 +4,6 @@ footer {
     color: $dark-grey;
     padding-top: 28px;
     padding-bottom: 28px;
-    // *
     justify-content: space-between;
     align-items: flex-end;
     .address-box {
@@ -30,16 +29,27 @@ footer {
         font-size: 24px;
         line-height: 28px;
       }
+      p {
+        a {
+          // text-decoration: none;
+          //I left text decoration intentionalli so it's visible that it's clickable
+          color: $dark-grey;
+        }
+      }
     }
     .partners-logos {
-      //? margin-top: 46px;
-      height: 102px;
-      width: 418px;
-      background-image: url(../img/partners_logo.png);
+      max-width: 420px;
+      display: grid;
+      gap: 10px;
+      .grid-row {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        justify-content: space-between;
+      }
     }
   }
   .copyright {
-    //? width: 100%;
     background-color: $red;
     padding: 22px 0px;
     text-align: center;

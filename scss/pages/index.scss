@@ -1,12 +1,15 @@
-.jumbatron-content {
+.jumbotron-content {
   display: flex;
-  margin-top: 50px;
-  margin-bottom: 100px;
-  padding: 58px 0px;
+  // margin-top: 50px;
+  // margin-bottom: 100px;
+  // padding: 58px 0px;
+  // *
+  margin-top: 100px;
+  margin-bottom: 150px;
   gap: 16px;
   // I am not sure if I need the gap here,
   //it works even without it
-  .jumbatron-text {
+  .jumbotron-text {
     h1 {
       color: #1f2e35;
       font-weight: 700;
@@ -24,20 +27,6 @@
   }
 }
 
-h1 {
-  em {
-    font-style: normal;
-    color: $red;
-  }
-}
-.btn-primary {
-  background-color: $red;
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 4px;
-  border: none;
-  color: $white;
-  padding: 12px 32px;
-}
 .welcome-pg {
   background-color: #f6f6f6;
   .welcome-content {
@@ -46,5 +35,10 @@ h1 {
     padding-top: 58px;
     padding-bottom: 62px;
     align-items: center;
+    p {
+      line-height: 27px;
+      font-size: 18px;
+      max-width: 520px;
+    }
   }
 }

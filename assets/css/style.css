@@ -142,6 +142,46 @@ footer .copyright {
   footer .copyright p {
     margin: 0; }
 
+.jumbatron-content {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  padding: 58px 0px;
+  gap: 16px; }
+  .jumbatron-content .jumbatron-text h1 {
+    color: #1f2e35;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px; }
+  .jumbatron-content .jumbatron-text p {
+    color: #30444e;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    margin-top: 24px;
+    margin-bottom: 24px; }
+
+h1 em {
+  font-style: normal;
+  color: #ee4248; }
+
+.btn-primary {
+  background-color: #ee4248;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  padding: 12px 32px; }
+
+.welcome-pg {
+  background-color: #f6f6f6; }
+  .welcome-pg .welcome-content {
+    display: flex;
+    gap: 82px;
+    padding-top: 58px;
+    padding-bottom: 62px;
+    align-items: center; }
+
 .container {
   width: 1145px;
   margin-left: auto;

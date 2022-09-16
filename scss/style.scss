@@ -1,6 +1,7 @@
 @import 'helpers/variables', 'helpers/mixins';
 @import './sections/header';
 @import './sections/footer';
+@import './sections/index';
 
 .container {
   width: 1145px;

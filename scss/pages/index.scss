@@ -1,0 +1,44 @@
+.jumbotron-content {
+  display: flex;
+  // margin-top: 50px;
+  // margin-bottom: 100px;
+  // padding: 58px 0px;
+  // *
+  margin-top: 100px;
+  margin-bottom: 150px;
+  gap: 16px;
+  // I am not sure if I need the gap here,
+  //it works even without it
+  .jumbotron-text {
+    h1 {
+      color: #1f2e35;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 64px;
+    }
+    p {
+      color: #30444e;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 29px;
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.welcome-pg {
+  background-color: #f6f6f6;
+  .welcome-content {
+    display: flex;
+    gap: 82px;
+    padding-top: 58px;
+    padding-bottom: 62px;
+    align-items: center;
+    p {
+      line-height: 27px;
+      font-size: 18px;
+      max-width: 520px;
+    }
+  }
+}

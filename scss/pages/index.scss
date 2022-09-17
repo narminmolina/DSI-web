@@ -1,14 +1,10 @@
 .jumbotron-content {
   display: flex;
-  // margin-top: 50px;
-  // margin-bottom: 100px;
-  // padding: 58px 0px;
-  // *
+
   margin-top: 100px;
   margin-bottom: 150px;
   gap: 16px;
-  // I am not sure if I need the gap here,
-  //it works even without it
+
   .jumbotron-text {
     h1 {
       color: #1f2e35;
@@ -39,6 +35,77 @@
       line-height: 27px;
       font-size: 18px;
       max-width: 520px;
+    }
+  }
+}
+
+.products {
+  margin-top: 115px;
+  margin-bottom: 100px;
+  text-align: center;
+  .section-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 43px;
+    text-align: center;
+    color: #1f2e35;
+    margin-bottom: 40px;
+  }
+  .box-wrapper {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    .product-box {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      text-align: left;
+      .product-img {
+        display: inline-block;
+        background-image: url(../../assets/img/products.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100px;
+        height: 100px;
+      }
+      .service-img {
+        display: inline-block;
+
+        background-image: url(../img/services.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100px;
+        height: 100px;
+      }
+      .technology-img {
+        display: inline-block;
+
+        background-image: url(../img/technology-logo.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100px;
+        height: 100px;
+      }
+
+      h1 {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 37px;
+        color: $red;
+        margin: 0px;
+      }
+      p {
+        max-width: 319px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: #30444e;
+        margin: 0px;
+      }
+      button {
+        max-width: 120px;
+        padding: 8px 16px;
+      }
     }
   }
 }

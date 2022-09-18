@@ -114,10 +114,15 @@ li {
     flex-direction: column;
     li {
       padding: 4px;
-      a:hover {
-        background-color: rgba(243, 241, 241, 0.4);
-        color: rgb(41, 41, 41);
-        padding: 4px;
+      a {
+        font-weight: 400;
+        line-height: 21px;
+        color: #1f2e35;
+
+        &:hover {
+          background-color: rgba(243, 241, 241, 0.4);
+          padding: 4px;
+        }
       }
     }
   }

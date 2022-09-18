@@ -42,3 +42,100 @@
     }
   }
 }
+
+.client-jumbotron {
+  border-bottom: 17px solid $red;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  background-image: url(../../assets/img/team.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto;
+  p {
+    max-width: 700px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 68px;
+    color: #30444e;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    em {
+      font-style: normal;
+      font-weight: 700;
+    }
+  }
+}
+.dots-img {
+  background-image: url(../../assets/img/dots.svg);
+  width: 120px;
+  height: 115px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.clients-title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 51px;
+  color: $dark-grey;
+  text-align: center;
+}
+.line-decoration {
+  background-image: url(../../assets/img/line-dec.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  padding: 5px 5px;
+  max-width: 88px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.client {
+  padding: 30px 0px;
+  .client-box {
+    display: flex;
+    gap: 95px;
+    .bank-logo {
+      display: flex;
+      align-items: center;
+    }
+    .client-information {
+      max-width: 570px;
+      h1 {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 45px;
+        color: $dark-grey;
+        margin-bottom: 16px;
+      }
+      ul {
+        text-align: left;
+        padding: 0px;
+        li {
+          list-style: none;
+        }
+        h2 {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 32px;
+          color: $red;
+          margin-bottom: 0px;
+        }
+        li {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 29px;
+          color: $dark-grey;
+        }
+      }
+    }
+  }
+}
+.grey {
+  background-color: #f7f7f7;
+}
+
+.testimonial {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DSI Web Landing</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -71,7 +72,7 @@
     <main>
       <h1 class="clients-title">Client Line-Up</h1>
       <div class="line-decoration"></div>
-      <section class="client grey">
+      <section class="banks grey">
         <div class="container">
           <div class="client-box">
             <div class="bank-logo">
@@ -102,7 +103,7 @@
           </div>
         </div>
       </section>
-      <section class="client">
+      <section class="banks">
         <div class="container">
           <div class="client-box">
             <div class="bank-logo">
@@ -141,7 +142,7 @@
           </div>
         </div>
       </section>
-      <section class="client grey">
+      <section class="banks grey">
         <div class="container">
           <div class="client-box">
             <div class="bank-logo">
@@ -169,7 +170,51 @@
       <section class="testimonial">
         <h1 class="clients-title">Testimonial</h1>
         <div class="line-decoration"></div>
-        <div class="slider"></div>
+        <div class="swiper swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="container">
+                <div class="testimonial-wrapper">
+                  <img src="./assets/img/slider1.png" alt="17" />
+                  <div class="testimonial-content">
+                    <div class="quotation"></div>
+                    <p>Est tation latine aliquip id, mea ad tale illud definitiones. Periculis omittantur necessitatibus eum ad, pro eripuit minimum comprehensam ne, usu cu stet prompta reformidans.</p>
+                    <cite>Connie Robertson at Google</cite>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container">
+                <div class="testimonial-wrapper">
+                  <img src="./assets/img/gabi.png" alt="17" />
+                  <div class="testimonial-content">
+                    <div class="quotation"></div>
+                    <p>Est tation latine aliquip id, mea ad tale illud definitiones. Periculis omittantur necessitatibus eum ad, pro eripuit minimum comprehensam ne, usu cu stet prompta reformidans.</p>
+                    <cite>Connie Robertson at Google</cite>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container">
+                <div class="testimonial-wrapper">
+                  <img src="./assets/img/ladyy.png" alt="lady" />
+                  <div class="testimonial-content">
+                    <div class="quotation"></div>
+                    <p>Est tation latine aliquip id, mea ad tale illud definitiones. Periculis omittantur necessitatibus eum ad, pro eripuit minimum comprehensam ne, usu cu stet prompta reformidans.</p>
+                    <cite>Connie Robertson at Google</cite>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
       </section>
     </main>
     <footer>
@@ -212,5 +257,6 @@
       </div>
     </footer>
     <script src="./assets/script/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>
 </html>

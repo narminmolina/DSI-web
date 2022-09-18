@@ -216,40 +216,41 @@ footer .copyright {
   background-image: url(../../assets/img/line-dec.svg);
   background-size: auto;
   background-repeat: no-repeat;
-  padding: 5px 5px;
+  height: 5px;
   max-width: 88px;
   margin-left: auto;
   margin-right: auto;
+  padding: 5px;
   margin-bottom: 50px; }
 
-.client {
+.banks {
   padding: 30px 0px; }
-  .client .client-box {
+  .banks .client-box {
     display: flex;
     gap: 95px; }
-    .client .client-box .bank-logo {
+    .banks .client-box .bank-logo {
       display: flex;
       align-items: center; }
-    .client .client-box .client-information {
+    .banks .client-box .client-information {
       max-width: 570px; }
-      .client .client-box .client-information h1 {
+      .banks .client-box .client-information h1 {
         font-weight: 500;
         font-size: 32px;
         line-height: 45px;
         color: #263238;
         margin-bottom: 16px; }
-      .client .client-box .client-information ul {
+      .banks .client-box .client-information ul {
         text-align: left;
         padding: 0px; }
-        .client .client-box .client-information ul li {
+        .banks .client-box .client-information ul li {
           list-style: none; }
-        .client .client-box .client-information ul h2 {
+        .banks .client-box .client-information ul h2 {
           font-weight: 500;
           font-size: 20px;
           line-height: 32px;
           color: #ee4248;
           margin-bottom: 0px; }
-        .client .client-box .client-information ul li {
+        .banks .client-box .client-information ul li {
           font-weight: 400;
           font-size: 18px;
           line-height: 29px;
@@ -261,6 +262,42 @@ footer .copyright {
 .testimonial {
   margin-top: 50px;
   margin-bottom: 50px; }
+  .testimonial .swiper {
+    max-width: 1290px; }
+    .testimonial .swiper .swiper-slide .container .testimonial-wrapper {
+      display: flex;
+      gap: 145px;
+      padding: 35px 0px; }
+      .testimonial .swiper .swiper-slide .container .testimonial-wrapper img {
+        width: 340px;
+        height: 280px;
+        margin-left: 120px; }
+      .testimonial .swiper .swiper-slide .container .testimonial-wrapper .testimonial-content {
+        max-width: 540px; }
+        .testimonial .swiper .swiper-slide .container .testimonial-wrapper .testimonial-content .quotation {
+          width: 48px;
+          height: 48px;
+          background-image: url(../../assets/img/quote.svg); }
+        .testimonial .swiper .swiper-slide .container .testimonial-wrapper .testimonial-content p,
+        .testimonial .swiper .swiper-slide .container .testimonial-wrapper .testimonial-content cite {
+          font-weight: 400; }
+        .testimonial .swiper .swiper-slide .container .testimonial-wrapper .testimonial-content p {
+          margin-top: 30px;
+          margin-bottom: 30px;
+          max-width: 540px;
+          font-size: 24px;
+          line-height: 36px;
+          letter-spacing: 0.2px;
+          color: #373f41; }
+        .testimonial .swiper .swiper-slide .container .testimonial-wrapper .testimonial-content cite {
+          font-style: normal;
+          font-size: 16px;
+          line-height: 22px;
+          letter-spacing: 0.1px;
+          color: #30444e; }
+    .testimonial .swiper .swiper-button-prev,
+    .testimonial .swiper .swiper-button-next {
+      color: #ee4248; }
 
 .container {
   width: 1145px;

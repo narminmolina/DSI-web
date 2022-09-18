@@ -32,4 +32,22 @@ activePage.forEach((link) => {
     link.classList.add('active');
   }
 });
-// it ends here. Please check the above Thank you
+
+// slider
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  // And if we need scrollbar
+});

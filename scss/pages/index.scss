@@ -187,3 +187,54 @@
   }
 }
 // not sure if I should make arrows a little different more sharp
+
+.about-jumbotron {
+  background-color: #f2f2f2a6;
+  padding: 80px 0px;
+  .about-jumbotron-wrapper {
+    display: flex;
+    align-items: center;
+    h1 {
+      max-width: 700px;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 68px;
+      color: #30444e;
+      em {
+        font-weight: 700;
+        font-style: normal;
+      }
+    }
+    a {
+      .large-logo {
+        max-width: 700px;
+        height: 205px;
+      }
+    }
+  }
+}
+.about-pg {
+  margin-top: 60px;
+  margin-bottom: 75px;
+  .line-decoration {
+    margin-left: 0px;
+  }
+  .about-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 45px;
+    color: $dark-grey;
+  }
+  .about-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+    color: $dark-grey;
+    em {
+      color: $red;
+      font-weight: 500;
+      font-style: normal;
+    }
+  }
+}

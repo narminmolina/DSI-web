@@ -1,24 +1,22 @@
 .jumbotron-content {
   display: flex;
-
-  margin-top: 100px;
-  margin-bottom: 150px;
   gap: 16px;
-
+  margin-bottom: 150px;
+  margin-top: 100px;
   .jumbotron-text {
     h1 {
       color: #1f2e35;
-      font-weight: 700;
       font-size: 48px;
+      font-weight: 700;
       line-height: 64px;
     }
     p {
-      color: #30444e;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 29px;
-      margin-top: 24px;
       margin-bottom: 24px;
+      margin-top: 24px;
+      color: #30444e;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 29px;
     }
   }
 }
@@ -27,80 +25,69 @@
   background-color: #f6f6f6;
   .welcome-content {
     display: flex;
-    gap: 82px;
-    padding-top: 58px;
-    padding-bottom: 62px;
     align-items: center;
+    gap: 82px;
+    padding-bottom: 62px;
+    padding-top: 58px;
     p {
-      line-height: 27px;
-      font-size: 18px;
       max-width: 520px;
+      font-size: 18px;
+      line-height: 27px;
     }
   }
 }
 
-.products {
-  margin-top: 115px;
+.product-service {
   margin-bottom: 100px;
-  text-align: center;
+  margin-top: 115px;
+  // ? text-align: center;
   .section-title {
-    font-weight: 500;
+    margin-bottom: 40px;
+    color: #1f2e35;
     font-size: 32px;
+    font-weight: 500;
     line-height: 43px;
     text-align: center;
-    color: #1f2e35;
-    margin-bottom: 40px;
   }
-  .box-wrapper {
+  .product-service-wrapper {
     display: flex;
-    gap: 15px;
     justify-content: space-between;
-    .product-box {
+    gap: 15px;
+    .product-service-item {
       display: flex;
-      flex-direction: column;
       gap: 15px;
-      text-align: left;
-      .product-img {
+      flex-direction: column;
+      // ? text-align: left;
+      &-img {
         display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .product {
         background-image: url(../../assets/img/products.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 100px;
-        height: 100px;
       }
-      .service-img {
-        display: inline-block;
-
+      .service {
         background-image: url(../img/services.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 100px;
-        height: 100px;
       }
-      .technology-img {
-        display: inline-block;
-
+      .technology {
         background-image: url(../img/technology-logo.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 100px;
-        height: 100px;
       }
-
       h1 {
-        font-weight: 500;
-        font-size: 28px;
-        line-height: 37px;
+        margin: 0;
         color: $red;
-        margin: 0px;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 37px;
       }
       p {
         max-width: 319px;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 27px;
+        margin: 0;
         color: #30444e;
-        margin: 0px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
       }
       button {
         max-width: 120px;

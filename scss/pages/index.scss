@@ -1,24 +1,22 @@
 .jumbotron-content {
   display: flex;
-  margin-top: 100px;
-  margin-bottom: 150px;
   gap: 16px;
-  // I am not sure if I need the gap here,
-  //it works even without it
+  margin-bottom: 150px;
+  margin-top: 100px;
   .jumbotron-text {
     h1 {
       color: #1f2e35;
-      font-weight: 700;
       font-size: 48px;
+      font-weight: 700;
       line-height: 64px;
     }
     p {
-      color: #30444e;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 29px;
-      margin-top: 24px;
       margin-bottom: 24px;
+      margin-top: 24px;
+      color: #30444e;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 29px;
     }
   }
 }
@@ -27,214 +25,74 @@
   background-color: #f6f6f6;
   .welcome-content {
     display: flex;
+    align-items: center;
     gap: 82px;
-    padding-top: 58px;
     padding-bottom: 62px;
-    align-items: center;
+    padding-top: 58px;
     p {
-      line-height: 27px;
-      font-size: 18px;
       max-width: 520px;
+      font-size: 18px;
+      line-height: 27px;
     }
   }
 }
 
-.client-jumbotron {
-  border-bottom: 17px solid $red;
-  margin-top: 60px;
-  margin-bottom: 50px;
-  background-image: url(../../assets/img/team.svg);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: auto;
-  p {
-    max-width: 700px;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 68px;
-    color: #30444e;
-    margin-top: 40px;
-    margin-bottom: 0px;
-    em {
-      font-style: normal;
-      font-weight: 700;
-    }
-  }
-}
-.dots-img {
-  background-image: url(../../assets/img/dots.svg);
-  width: 120px;
-  height: 115px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.clients-title {
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 51px;
-  color: $dark-grey;
-  text-align: center;
-}
-.line-decoration {
-  background-image: url(../../assets/img/line-dec.svg);
-  background-size: auto;
-  background-repeat: no-repeat;
-  height: 5px;
-  max-width: 88px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5px;
-  margin-bottom: 50px;
-}
-
-.banks {
-  padding: 30px 0px;
-  .client-box {
-    display: flex;
-    gap: 95px;
-    .bank-logo {
-      display: flex;
-      align-items: center;
-    }
-    .client-information {
-      max-width: 570px;
-      h1 {
-        font-weight: 500;
-        font-size: 32px;
-        line-height: 45px;
-        color: $dark-grey;
-        margin-bottom: 16px;
-      }
-      ul {
-        text-align: left;
-        padding: 0px;
-        li {
-          list-style: none;
-        }
-        h2 {
-          font-weight: 500;
-          font-size: 20px;
-          line-height: 32px;
-          color: $red;
-          margin-bottom: 0px;
-        }
-        li {
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 29px;
-          color: $dark-grey;
-        }
-      }
-    }
-  }
-}
-.grey {
-  background-color: #f7f7f7;
-}
-
-.testimonial {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  .swiper {
-    max-width: 1290px;
-    .swiper-slide {
-      .container {
-        .testimonial-wrapper {
-          display: flex;
-          gap: 145px;
-          padding: 35px 0px;
-          img {
-            width: 340px;
-            height: 280px;
-            margin-left: 120px;
-          }
-          .testimonial-content {
-            max-width: 540px;
-            .quotation {
-              width: 48px;
-              height: 48px;
-              background-image: url(../../assets/img/quote.svg);
-            }
-
-            p,
-            cite {
-              font-weight: 400;
-            }
-            p {
-              margin-top: 30px;
-              margin-bottom: 30px;
-              max-width: 540px;
-              font-size: 24px;
-              line-height: 36px;
-              letter-spacing: 0.2px;
-              color: #373f41;
-            }
-            cite {
-              font-style: normal;
-              font-size: 16px;
-              line-height: 22px;
-              letter-spacing: 0.1px;
-              color: #30444e;
-            }
-          }
-        }
-      }
-    }
-    .swiper-button-prev,
-    .swiper-button-next {
-      color: $red;
-    }
-  }
-}
-// not sure if I should make arrows a little different more sharp
-
-.about-jumbotron {
-  background-color: #f2f2f2a6;
-  padding: 80px 0px;
-  .about-jumbotron-wrapper {
-    display: flex;
-    align-items: center;
-    h1 {
-      max-width: 700px;
-      font-weight: 400;
-      font-size: 48px;
-      line-height: 68px;
-      color: #30444e;
-      em {
-        font-weight: 700;
-        font-style: normal;
-      }
-    }
-    a {
-      .large-logo {
-        max-width: 700px;
-        height: 205px;
-      }
-    }
-  }
-}
-.about-pg {
-  margin-top: 60px;
-  margin-bottom: 75px;
-  .line-decoration {
-    margin-left: 0px;
-  }
-  .about-title {
-    font-weight: 500;
+.product-service {
+  margin-bottom: 100px;
+  margin-top: 115px;
+  // ? text-align: center;
+  .section-title {
+    margin-bottom: 40px;
+    color: #1f2e35;
     font-size: 32px;
-    line-height: 45px;
-    color: $dark-grey;
+    font-weight: 500;
+    line-height: 43px;
+    text-align: center;
   }
-  .about-text {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: justify;
-    color: $dark-grey;
-    em {
-      color: $red;
-      font-weight: 500;
-      font-style: normal;
+  .product-service-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    .product-service-item {
+      display: flex;
+      gap: 15px;
+      flex-direction: column;
+      // ? text-align: left;
+      &-img {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .product {
+        background-image: url(../../assets/img/products.svg);
+      }
+      .service {
+        background-image: url(../img/services.svg);
+      }
+      .technology {
+        background-image: url(../img/technology-logo.svg);
+      }
+      h1 {
+        margin: 0;
+        color: $red;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 37px;
+      }
+      p {
+        max-width: 319px;
+        margin: 0;
+        color: #30444e;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+      }
+      button {
+        max-width: 120px;
+        padding: 8px 16px;
+      }
     }
   }
 }

@@ -333,7 +333,8 @@ footer .copyright {
     font-size: 18px;
     line-height: 25px;
     text-align: justify;
-    color: #263238; }
+    color: #263238;
+    margin-bottom: 0px; }
     .about-pg .about-text em {
       color: #ee4248;
       font-weight: 500;

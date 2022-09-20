@@ -1,0 +1,144 @@
+.client-jumbotron {
+  margin-bottom: 50px;
+  margin-top: 60px;
+  background-image: url(../../assets/img/team.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: auto;
+  border-bottom: 17px solid $red;
+  h1 {
+    max-width: 700px;
+    margin-bottom: 0px;
+    margin-top: 40px;
+    color: #30444e;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 68px;
+    em {
+      font-style: normal;
+      font-weight: 700;
+    }
+  }
+  .dots-img {
+    width: 120px;
+    height: 115px;
+    background-image: url(../../assets/img/dots.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.clients-title {
+  color: $dark-grey;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 51px;
+  text-align: center;
+}
+
+.banks {
+  padding: 30px 0px;
+  &:nth-child(even) {
+    background-color: #f7f7f7;
+  }
+  .client-box {
+    display: flex;
+    gap: 95px;
+    justify-content: space-between;
+    .bank-logo {
+      display: flex;
+      align-items: center;
+    }
+    .client-information {
+      max-width: 570px;
+      h1 {
+        margin-bottom: 16px;
+        color: $dark-grey;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 45px;
+      }
+      h2 {
+        margin-bottom: 0px;
+        color: $red;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 32px;
+      }
+      p {
+        color: $dark-grey;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 29px;
+      }
+    }
+  }
+}
+
+.testimonial {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  .swiper {
+    max-width: 1290px;
+    .swiper-slide {
+      .container {
+        .testimonial-wrapper {
+          display: flex;
+          gap: 145px;
+          padding: 35px 0px;
+          img {
+            width: 340px;
+            height: 280px;
+            margin-left: 120px;
+            object-fit: cover;
+            // *
+            border-top-left-radius: 32px;
+            border-bottom-right-radius: 32px;
+          }
+          .testimonial-content {
+            max-width: 540px;
+            .quotation {
+              width: 48px;
+              height: 48px;
+              background-image: url(../../assets/img/quote.svg);
+            }
+
+            cite,
+            blockquote {
+              font-weight: 400;
+            }
+            blockquote {
+              max-width: 540px;
+              margin-bottom: 30px;
+              margin-top: 30px;
+              color: #373f41;
+              font-size: 24px;
+              line-height: 36px;
+              letter-spacing: 0.2px;
+            }
+            cite {
+              color: #30444e;
+              font-size: 16px;
+              font-style: normal;
+              line-height: 22px;
+              letter-spacing: 0.1px;
+            }
+          }
+        }
+      }
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: transparent;
+      background-color: transparent;
+      border: 0;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml,%3Csvg width='21' height='36' viewBox='0 0 21 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m21 3-3-3L0 18l18 18 3-3L6 18 21 3Z' fill='%23EE4248'/%3E%3C/svg%3E");
+    }
+    .swiper-button-next {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+// not sure if I should make arrows a little different more sharp

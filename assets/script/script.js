@@ -20,27 +20,19 @@ document.addEventListener('click', (e) => {
 
 // Track active page and make it bold
 const currentPath = window.location.pathname;
-console.log('🚀 ~ file: script.js ~ line 23 ~ currentPath', currentPath);
 let activePage = document.querySelectorAll('nav li a');
 
 activePage.forEach((link) => {
   const hrefFragments = link.href.split('/');
   const hrefPath = '/' + hrefFragments[hrefFragments.length - 1];
-  console.log('🚀 ~ file: script.js ~ line 28 ~ activePage.forEach ~ hrefPath', hrefPath);
 
   if (hrefPath === currentPath) {
     link.classList.add('active');
   }
 });
 
-// slider
-
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
-
   loop: true,
-
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -49,5 +41,4 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-pagination',
     clickable: true,
   },
-  // And if we need scrollbar
 });

@@ -151,6 +151,7 @@ footer .footer-wrapper .contact-info h1 {
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
+  margin-bottom: 15px;
 }
 footer .footer-wrapper .contact-info p a {
   text-decoration: none;
@@ -183,23 +184,23 @@ footer .copyright p {
 
 .jumbotron-content {
   display: flex;
-  margin-top: 100px;
-  margin-bottom: 150px;
   gap: 16px;
+  margin-bottom: 150px;
+  margin-top: 100px;
 }
 .jumbotron-content .jumbotron-text h1 {
   color: #1f2e35;
-  font-weight: 700;
   font-size: 48px;
+  font-weight: 700;
   line-height: 64px;
 }
 .jumbotron-content .jumbotron-text p {
-  color: #30444e;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 29px;
-  margin-top: 24px;
   margin-bottom: 24px;
+  margin-top: 24px;
+  color: #30444e;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29px;
 }
 
 .welcome-pg {
@@ -207,15 +208,73 @@ footer .copyright p {
 }
 .welcome-pg .welcome-content {
   display: flex;
-  gap: 82px;
-  padding-top: 58px;
-  padding-bottom: 62px;
   align-items: center;
+  gap: 82px;
+  padding-bottom: 62px;
+  padding-top: 58px;
 }
 .welcome-pg .welcome-content p {
-  line-height: 27px;
-  font-size: 18px;
   max-width: 520px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.product-service {
+  margin-bottom: 100px;
+  margin-top: 115px;
+}
+.product-service .section-title {
+  margin-bottom: 40px;
+  color: #1f2e35;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 43px;
+  text-align: center;
+}
+.product-service .product-service-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.product-service .product-service-wrapper .product-service-item {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+.product-service .product-service-wrapper .product-service-item-img {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.product-service .product-service-wrapper .product-service-item .product {
+  background-image: url(../../assets/img/products.svg);
+}
+.product-service .product-service-wrapper .product-service-item .service {
+  background-image: url(../img/services.svg);
+}
+.product-service .product-service-wrapper .product-service-item .technology {
+  background-image: url(../img/technology-logo.svg);
+}
+.product-service .product-service-wrapper .product-service-item h1 {
+  margin: 0;
+  color: #ee4248;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 37px;
+}
+.product-service .product-service-wrapper .product-service-item p {
+  max-width: 319px;
+  margin: 0;
+  color: #30444e;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.product-service .product-service-wrapper .product-service-item button {
+  max-width: 120px;
+  padding: 8px 16px;
 }
 
 .client-jumbotron {

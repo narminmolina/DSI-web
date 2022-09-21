@@ -42,3 +42,6 @@ const swiper = new Swiper('.swiper', {
     clickable: true,
   },
 });
+
+// Play button
+

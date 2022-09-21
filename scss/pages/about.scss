@@ -1,0 +1,173 @@
+.about-jumbotron {
+  background-color: #f2f2f2a6;
+  padding: 80px 0px;
+  .about-jumbotron-wrapper {
+    display: flex;
+    align-items: center;
+    h1 {
+      max-width: 700px;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 68px;
+      color: #30444e;
+      em {
+        font-weight: 700;
+        font-style: normal;
+      }
+    }
+    a {
+      .large-logo {
+        max-width: 700px;
+        height: 205px;
+      }
+    }
+  }
+}
+
+.about-pg {
+  margin-top: 60px;
+  margin-bottom: 75px;
+  .curvy-line {
+    &::after {
+      margin-left: 0;
+      margin-right: auto;
+    }
+  }
+  .about-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 45px;
+    color: $dark-grey;
+  }
+  .about-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+    color: $dark-grey;
+    margin-bottom: 0px;
+    em {
+      color: $red;
+      font-weight: 500;
+      font-style: normal;
+    }
+  }
+}
+
+.prespectives {
+  background-color: #f7f7f7;
+  padding: 45px 0px;
+  margin-bottom: 50px;
+}
+.video-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  .video-box {
+    position: relative;
+    max-width: 560px;
+    height: 410px;
+
+    video {
+      border-radius: 10px;
+      position: absolute;
+    }
+    .overlay {
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%);
+      width: 560px;
+      height: 410px;
+      border-radius: 10px;
+      position: relative;
+
+      .play {
+        background-image: url(../../assets/img/play-btn.svg);
+        background-color: transparent;
+        background-repeat: no-repeat;
+        border: none;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+        margin: auto;
+      }
+    }
+  }
+  .video-content {
+    max-width: 475px;
+    .curvy-line {
+      &::after {
+        margin-left: 0;
+        margin-right: auto;
+      }
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: 32px auto;
+      grid-template-columns: auto auto;
+      column-gap: 20px;
+      row-gap: 30px;
+      .icon {
+        height: 32px;
+        width: 32px;
+      }
+      .vision {
+        background-image: url(../../assets/img/vision-icon.svg);
+      }
+      .mission {
+        background-image: url(../../assets/img/mission-icon.svg);
+      }
+      .grid-item-content {
+        color: $dark-grey;
+        h2 {
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 24px;
+          letter-spacing: 0.1px;
+          margin-bottom: 16px;
+        }
+        p {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 24px;
+          letter-spacing: 0.2px;
+          margin: 0px;
+        }
+      }
+    }
+  }
+}
+
+.DSI-culture {
+  background-color: $red;
+  padding: 50px 0px;
+  color: white;
+  .container {
+    .video-wrapper {
+      align-items: flex-end;
+      .video-content {
+        .curvy-line {
+          &::after {
+            background-image: url("data:image/svg+xml,%3Csvg width='90' height='9' viewBox='0 0 90 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 7L17.9231 2L33.3956 7L51.2857 2L69.6593 7L89 2' stroke='%23000' stroke-width='4' stroke-linejoin='bevel'/%3E%3C/svg%3E%0A");
+            margin-bottom: 45px;
+          }
+        }
+        .culture-text {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 25px;
+          margin: 0px;
+          max-width: 470px;
+        }
+      }
+      .video-box {
+        height: 365px;
+      }
+      .overlay {
+        height: 365px;
+      }
+    }
+  }
+}

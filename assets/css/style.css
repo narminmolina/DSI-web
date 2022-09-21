@@ -469,6 +469,60 @@ footer .copyright {
     .DSI-culture .container .video-wrapper .overlay {
       height: 365px; }
 
+.contact-us {
+  margin-top: 50px;
+  margin-bottom: 135px;
+  text-align: center; }
+  .contact-us .curvy-line {
+    margin-bottom: 35px; }
+  .contact-us .contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px; }
+  .contact-us .contacts-grid {
+    display: grid;
+    grid-template-columns: 70px 355px;
+    grid-template-rows: 100px 75px 75px;
+    column-gap: 35px;
+    row-gap: 50px; }
+    .contact-us .contacts-grid .icon {
+      width: 70px;
+      height: 70px; }
+    .contact-us .contacts-grid .house {
+      align-self: center;
+      background-image: url(../../assets/img/house.svg); }
+    .contact-us .contacts-grid .email {
+      background-image: url(../../assets/img/email.svg); }
+    .contact-us .contacts-grid .phone {
+      background-image: url(../../assets/img/phone.svg); }
+    .contact-us .contacts-grid .address-box,
+    .contact-us .contacts-grid .email-box,
+    .contact-us .contacts-grid .phone-box {
+      display: flex;
+      flex-direction: column;
+      text-align: left; }
+      .contact-us .contacts-grid .address-box h2,
+      .contact-us .contacts-grid .email-box h2,
+      .contact-us .contacts-grid .phone-box h2 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 46px;
+        color: #1f2e35;
+        text-align: left;
+        margin-bottom: 0px; }
+      .contact-us .contacts-grid .address-box address,
+      .contact-us .contacts-grid .address-box a,
+      .contact-us .contacts-grid .email-box address,
+      .contact-us .contacts-grid .email-box a,
+      .contact-us .contacts-grid .phone-box address,
+      .contact-us .contacts-grid .phone-box a {
+        display: inline-block;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        color: #30444e;
+        text-decoration: none; }
+
 .container {
   width: 1145px;
   margin-left: auto;

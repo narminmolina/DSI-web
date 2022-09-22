@@ -42,6 +42,29 @@ const swiper = new Swiper('.swiper', {
     clickable: true,
   },
 });
-
+// debugger;
 // Play button
 
+const videoBox = document.querySelectorAll('.video-box');
+videoBox.forEach((box) => {
+  const playButton = box.querySelector('.overlay>.play-btn');
+  playButton.addEventListener('click', (e) => {
+    let overlay = e.currentTarget.parentElement;
+    overlay.classList.toggle('play');
+    let video = e.currentTarget.parentElement.previousElementSibling;
+    video.paused ? video.play() : video.pause();
+  });
+});
+// YOUR SISTER IS VEHSHI :D
+
+//This below worked but only for first video start...
+// const playButton = document.querySelectorAll('.play-btn');
+// console.log(videos);
+
+// playButton.addEventListener('click', togglePlay);
+
+// function togglePlay() {
+//   video.paused ? video.play() : video.pause();
+//   playButton.classList.toggle('play');
+// }
+// end.....

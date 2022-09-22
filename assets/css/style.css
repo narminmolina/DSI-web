@@ -403,7 +403,7 @@ footer .copyright {
       height: 410px;
       border-radius: 10px;
       position: relative; }
-      .video-wrapper .video-box .overlay .play {
+      .video-wrapper .video-box .overlay .play-btn {
         background-image: url(../../assets/img/play-btn.svg);
         background-color: transparent;
         background-repeat: no-repeat;
@@ -416,6 +416,8 @@ footer .copyright {
         top: 0%;
         bottom: 0%;
         margin: auto; }
+    .video-wrapper .video-box .play {
+      opacity: 0; }
   .video-wrapper .video-content {
     max-width: 475px; }
     .video-wrapper .video-content .curvy-line::after {

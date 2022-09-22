@@ -79,7 +79,7 @@
       border-radius: 10px;
       position: relative;
 
-      .play {
+      .play-btn {
         background-image: url(../../assets/img/play-btn.svg);
         background-color: transparent;
         background-repeat: no-repeat;
@@ -93,6 +93,9 @@
         bottom: 0%;
         margin: auto;
       }
+    }
+    .play {
+      opacity: 0;
     }
   }
   .video-content {

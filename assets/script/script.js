@@ -55,7 +55,6 @@ videoBox.forEach((box) => {
     video.paused ? video.play() : video.pause();
   });
 });
-// YOUR SISTER IS VEHSHI :D
 
 //This below worked but only for first video start...
 // const playButton = document.querySelectorAll('.play-btn');
@@ -68,3 +67,16 @@ videoBox.forEach((box) => {
 //   playButton.classList.toggle('play');
 // }
 // end.....
+
+//Responsive Nav bar
+
+let navButton = document.querySelector('.burger');
+let nav = document.querySelector('nav');
+
+navButton.addEventListener('click', (e) => {
+  if (e.target == navButton) {
+    nav.classList.toggle('active-nav');
+  }
+});
+
+//end.

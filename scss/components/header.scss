@@ -1,40 +1,85 @@
 header {
   color: #1f2e35;
   box-shadow: $box-shadow;
+  position: relative;
+
   .header-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 22px 0;
     gap: 108px;
+    width: 100%;
+    @include mobile {
+      padding: 8px 32px 8px 24px;
+    }
+    .burger {
+      display: none;
+      height: 20px;
+      width: 25px;
+      background-color: transparent;
+      border: 0;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url(../../assets/img/burger.svg);
+      @include mobile {
+        display: inline-block;
+      }
+    }
   }
 }
 
 nav {
   display: flex;
+  @include mobile {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 72px;
+  }
+
   ul {
     display: flex;
     padding: 0;
     list-style: none;
     margin: 0px;
+    @include mobile {
+      text-align: left;
+      flex-direction: column;
+      padding-top: 40px;
+    }
   }
   & > ul {
     gap: 50px;
-  }
-}
-
-li {
-  font-size: 18px;
-  a {
-    text-decoration: none;
-    font-weight: 400;
-    line-height: 21px;
-    color: #1f2e35;
-    &.active {
-      font-weight: 600;
+    @include mobile {
+      gap: 40px;
     }
-    &:hover {
-      color: black;
+  }
+
+  li {
+    font-size: 18px;
+    a {
+      text-decoration: none;
+      font-weight: 400;
+      line-height: 21px;
+      color: #1f2e35;
+      &.active {
+        font-weight: 600;
+      }
+      &:hover {
+        color: black;
+      }
+    }
+    .client,
+    .partner {
+      @include mobile {
+        display: none;
+      }
+    }
+    .about {
+      @include mobile {
+        text-align: left;
+      }
     }
   }
   button {
@@ -49,9 +94,15 @@ li {
   .client::after {
     content: url(../img/chevron_down.svg);
     margin-left: 8px;
+    @include mobile {
+      display: none;
+    }
   }
 }
 
+.active-nav {
+  display: flex;
+}
 .nav-actions {
   display: flex;
   gap: 24px;
@@ -80,6 +131,12 @@ li {
     width: 16px;
     height: 16px;
     background-image: url(../img/shuffle.svg);
+  }
+  @include mobile {
+    position: absolute;
+    bottom: 0;
+    margin-left: 0px;
+    margin-top: 240px;
   }
 }
 
@@ -125,5 +182,8 @@ li {
         }
       }
     }
+  }
+  @include mobile {
+    display: none;
   }
 }

@@ -35,9 +35,12 @@ nav {
     display: none;
     width: 100%;
     position: absolute;
+    padding-left: 30px;
+    padding-bottom: 30px;
     top: 72px;
+    left: 0px;
+    align-content: space-between;
   }
-
   ul {
     display: flex;
     padding: 0;
@@ -79,6 +82,7 @@ nav {
     .about {
       @include mobile {
         text-align: left;
+        margin-bottom: 240px;
       }
     }
   }
@@ -102,6 +106,7 @@ nav {
 
 .active-nav {
   display: flex;
+  background-color: $white;
 }
 .nav-actions {
   display: flex;
@@ -136,7 +141,6 @@ nav {
     position: absolute;
     bottom: 0;
     margin-left: 0px;
-    margin-top: 240px;
   }
 }
 

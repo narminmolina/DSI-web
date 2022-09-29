@@ -6,13 +6,22 @@ footer {
     padding-bottom: 28px;
     justify-content: space-between;
     align-items: flex-end;
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 32px;
+      padding-left: 26px;
+      padding-right: 30px;
+    }
     .address-box {
       strong {
         margin-top: 10px;
-        margin-bottom: 8px;
         font-weight: 500;
         line-height: 21px;
         font-size: 18px;
+        @include mobile {
+          margin-top: 5px;
+        }
       }
     }
     address,
@@ -21,9 +30,13 @@ footer {
       line-height: 24px;
       font-size: 18px;
       margin-bottom: 0;
+      margin-top: 16px;
     }
     .contact-info {
       margin: 22px 74px 0px 48px;
+      @include mobile {
+        margin: 0px;
+      }
       h1 {
         font-weight: 500;
         font-size: 24px;
@@ -42,11 +55,23 @@ footer {
       max-width: 420px;
       display: grid;
       gap: 10px;
+      @include mobile {
+        width: 355px;
+        gap: 15px;
+      }
       .grid-row {
         display: flex;
         gap: 25px;
         align-items: center;
         justify-content: space-between;
+        @include mobile {
+          gap: 20px;
+        }
+        img {
+          @include mobile {
+            max-width: 122px;
+          }
+        }
       }
     }
   }

@@ -63,11 +63,11 @@
         <div class="about-jumbotron-wrapper">
           <h1>
             to grow the business together
-            <em> Continous effort through improvement and innovation</em>
+            <strong> Continous effort through improvement and innovation</strong>
           </h1>
-          <a href="/" title="Home" class="logo-link">
-            <img class="large-logo" src="./assets/img/logo.svg" alt="Logo" />
-          </a>
+          <!-- <a href="/" title="Home" class="logo-link"> -->
+          <img class="large-logo" src="./assets/img/logo.svg" alt="Logo" />
+          <!-- </a> -->
         </div>
       </div>
     </section>
@@ -96,11 +96,12 @@
           </p>
         </div>
       </section>
-      <section class="prespectives">
+      <section class="perspectives">
         <div class="container">
           <div class="video-wrapper">
             <div class="video-box">
-              <video width="560" height="410px" poster="./assets/img/prespectives-img.jpg" controls>
+              <div class="vsc-controller"></div>
+              <video poster="./assets/img/perspectives-img.jpg">
                 <source src="./assets/videos/business.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
@@ -141,7 +142,8 @@
               </p>
             </div>
             <div class="video-box">
-              <video width="560" height="365px" poster="./assets/img/culture-cover.jpg" controls>
+              <div class="vsc-controller"></div>
+              <video poster="./assets/img/culture-cover.jpg">
                 <source src="./assets/videos/business.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
@@ -156,39 +158,27 @@
         <div class="container">
           <h1 class="about-title curvy-line">Contact Us</h1>
           <div class="contact-wrapper">
-            <div class="mapouter">
-              <div class="gmap_canvas">
-                <iframe width="610" height="430" id="gmap_canvas" src="https://maps.google.com/maps?q=Boba%20guys%20hays%20valley&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe
-                ><a href="https://www.whatismyip-address.com"></a><br /><style>
-                  .mapouter {
-                    position: relative;
-                    text-align: right;
-                    height: 500px;
-                    width: 600px;
-                  }</style><style>
-                  .gmap_canvas {
-                    overflow: hidden;
-                    background: none !important;
-                    height: 500px;
-                    width: 600px;
-                  }
-                </style>
-              </div>
+            <div class="map">
+              <iframe src="https://maps.google.com/maps?q=Boba%20guys%20hays%20valley&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
             </div>
-            <div class="contacts-grid">
-<div class="house icon"></div>
-<div class="address-box">
-    <h2 >Alamat</h2>
-    <address>Jl. Halim Perdana Kusuma, Ring Road Bangkalan, Madura, Jawa Timur.</address>
-  </div>
-  <div class="email icon"></div>
-  <div class="email-box"><h2 >Email</h2>
-     <a href='mailto:sekolahku@sch.id'>sekolahku@sch.id</a>
-  </div>
-  <div class="phone icon">
-  </div>
-  <div class="phone-box"><h2  >Telephone</h2>
-    <a href="tel:+0313092223"> +(031)3092223 </a></div>
+            <div class="contact-items">
+              <div class="address">
+                <div class="contact-item-content">
+                  <h2>Alamat</h2>
+                  <address>Jl. Halim Perdana Kusuma, Ring Road Bangkalan, Madura, Jawa Timur.</address>
+                </div>
+              </div>
+              <div class="email">
+                <div class="contact-item-content">
+                  <h2>Email</h2>
+                  <a href="mailto:sekolahku@sch.id">sekolahku@sch.id</a>
+                </div>
+              </div>
+              <div class="phone">
+                <div class="contact-item-content">
+                  <h2>Telephone</h2>
+                  <a href="tel:+0313092223"> +(031)3092223 </a>
+                </div>
               </div>
             </div>
           </div>
@@ -234,8 +224,7 @@
         <!-- I feel like strong tag is needed ?? -->
       </div>
     </footer>
-      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/script/script.js" defer></script>
   </body>
 </html>

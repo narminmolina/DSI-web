@@ -47,7 +47,7 @@ const swiper = new Swiper('.swiper', {
 
 const videoBox = document.querySelectorAll('.video-box');
 videoBox.forEach((box) => {
-  const playButton = box.querySelector('.overlay>.play-btn');
+  const playButton = box.querySelector('.overlay > .play-btn');
   playButton.addEventListener('click', (e) => {
     let overlay = e.currentTarget.parentElement;
     overlay.classList.toggle('play');

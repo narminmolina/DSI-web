@@ -72,7 +72,7 @@
     color: $dark-grey;
     margin-bottom: 0px;
     @include mobile {
-      width: 358px;
+      // width: 358px;
     }
     em {
       color: $red;
@@ -88,7 +88,7 @@
   margin-bottom: 50px;
   @include mobile {
     margin-bottom: 34px;
-    padding: 0px 12px;
+    // padding: 0px 12px;
     background-color: $white;
   }
 }
@@ -122,7 +122,7 @@
     max-width: 560px;
     max-height: 410px;
     @include mobile {
-      width: 345px;
+      // width: 345px;
       height: 256px;
     }
     video {
@@ -155,6 +155,11 @@
         top: 0%;
         bottom: 0%;
         margin: auto;
+        @include mobile {
+          width: 77px;
+          height: 77px;
+          background-size: cover;
+        }
       }
     }
     .play {
@@ -215,8 +220,14 @@
   padding: 50px 0px;
   color: white;
   .container {
+    @include mobile {
+      padding: 0 35px;
+    }
     .video-wrapper {
       align-items: flex-end;
+      @include mobile {
+        align-items: unset;
+      }
       .video-content {
         .curvy-line {
           &::after {
@@ -231,7 +242,7 @@
           margin: 0px;
           max-width: 470px;
           @include mobile {
-            width: 340px;
+            // width: 340px;
           }
         }
       }
@@ -253,11 +264,11 @@
     text-align: left;
   }
   .curvy-line {
-    margin-bottom: 35px;
-    @include mobile {
-      margin-right: auto;
-      margin-left: 0px;
-      max-width: 100%;
+    &::after {
+      @include mobile {
+        margin-left: 0;
+        margin-right: auto;
+      }
     }
   }
   .contact-wrapper {
@@ -274,13 +285,11 @@
     display: flex;
     flex-direction: column;
     gap: 55px;
-    // display: grid;
-    // grid-template-columns: 70px 355px;
-    // grid-template-rows: 100px 75px 75px;
-    // row-gap: 50px;
-    .address,
-    .email,
-    .phone {
+
+    @include mobile {
+      gap: 35px;
+    }
+    & > div {
       display: flex;
       align-items: center;
       flex-direction: row;
@@ -292,9 +301,10 @@
         width: 70px;
         height: 70px;
         display: inline-block;
+        flex-shrink: 0;
       }
       @include mobile {
-        max-width: 255px;
+        // max-width: 255px;
       }
       .contact-item-content {
         display: flex;
@@ -339,7 +349,7 @@
     width: 610px;
     height: 430px;
     @include mobile {
-      width: 340px;
+      width: 100%;
       height: 240px;
     }
     iframe {

@@ -17,6 +17,9 @@
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0px;
+  &.lock-body {
+    overflow: hidden;
+  }
 }
 
 em.red-emphasis {

@@ -40,7 +40,7 @@ nav {
     padding-bottom: 30px;
     top: 72px;
     left: 0px;
-    align-content: space-between;
+    height: calc(100vh - 72px);
   }
   ul {
     display: flex;
@@ -140,7 +140,7 @@ nav {
   }
   @include mobile {
     position: absolute;
-    bottom: 0;
+    bottom: 30px;
     margin-left: 0px;
   }
 }

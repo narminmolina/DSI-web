@@ -5,3 +5,8 @@
     font-style: $style;
   }
 }
+@mixin mobile {
+  @media (max-width: 1080px) {
+    @content;
+  }
+}

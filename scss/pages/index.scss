@@ -3,12 +3,25 @@
   gap: 16px;
   margin-bottom: 150px;
   margin-top: 100px;
+  @include mobile {
+    flex-direction: column-reverse;
+    padding-top: 55px;
+    padding-bottom: 50px;
+    margin: 0px;
+    text-align: center;
+    gap: 32px;
+  }
   .jumbotron-text {
     h1 {
       color: #1f2e35;
       font-size: 48px;
       font-weight: 700;
       line-height: 64px;
+      @include mobile {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 45px;
+      }
     }
     p {
       margin-bottom: 24px;
@@ -17,7 +30,14 @@
       font-size: 20px;
       font-weight: 400;
       line-height: 29px;
+      @include mobile {
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
     }
+  }
+  img {
+    width: 100%;
   }
 }
 
@@ -29,6 +49,27 @@
     gap: 82px;
     padding-bottom: 62px;
     padding-top: 58px;
+
+    @include mobile {
+      flex-direction: column;
+      padding: 60px 22px 30px 22px;
+      gap: 35px;
+    }
+    img {
+      @include mobile {
+        width: 350px;
+      }
+    }
+    h1 {
+      max-width: 455px;
+      color: #1f2e35;
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 43px;
+      @include mobile {
+        text-align: center;
+      }
+    }
     p {
       max-width: 520px;
       font-size: 18px;
@@ -40,7 +81,10 @@
 .product-service {
   margin-bottom: 100px;
   margin-top: 115px;
-  // ? text-align: center;
+  @include mobile {
+    margin-bottom: 64px;
+    margin-top: 36px;
+  }
   .section-title {
     margin-bottom: 40px;
     color: #1f2e35;
@@ -53,11 +97,17 @@
     display: flex;
     justify-content: space-between;
     gap: 15px;
+    @include mobile {
+      flex-direction: column;
+      gap: 32px;
+    }
     .product-service-item {
       display: flex;
       gap: 15px;
       flex-direction: column;
-      // ? text-align: left;
+      @include mobile {
+        align-items: center;
+      }
       &-img {
         display: inline-block;
         width: 100px;

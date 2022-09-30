@@ -12,7 +12,6 @@
     background-position-y: 175px;
     background-color: #f6f6f6;
     padding-top: 30px;
-    padding-right: 40px;
     margin-top: 0px;
   }
   h1 {
@@ -27,7 +26,6 @@
       font-size: 32px;
       line-height: 45px;
       margin: 0px;
-      padding-left: 40px;
     }
     em {
       font-style: normal;
@@ -60,7 +58,7 @@
 .banks {
   padding: 30px 0px;
   @include mobile {
-    padding: 50px 30px;
+    padding: 50px 20px;
   }
   &:nth-child(even) {
     background-color: #f7f7f7;
@@ -71,11 +69,18 @@
     justify-content: space-between;
     @include mobile {
       flex-direction: column;
+      gap: 25px;
     }
     .bank-logo {
       display: flex;
       align-items: center;
-@in    }
+      img {
+        width: 100%;
+        @include mobile {
+          width: 330px;
+        }
+      }
+    }
     .client-information {
       max-width: 570px;
       h1 {
@@ -105,6 +110,9 @@
 .testimonial {
   margin-bottom: 50px;
   margin-top: 50px;
+  @include mobile {
+    padding: 0px 20px;
+  }
   .swiper {
     max-width: 1290px;
     .swiper-slide {
@@ -113,6 +121,11 @@
           display: flex;
           gap: 145px;
           padding: 35px 0px;
+          position: relative;
+          @include mobile {
+            flex-direction: column;
+            gap: 32px;
+          }
           img {
             width: 340px;
             height: 280px;
@@ -121,6 +134,14 @@
             // *
             border-top-left-radius: 32px;
             border-bottom-right-radius: 32px;
+
+            @include mobile {
+              width: 300px;
+              height: 100%;
+              margin-left: 0px;
+              align-self: center;
+              margin-bottom: 32px;
+            }
           }
           .testimonial-content {
             max-width: 540px;
@@ -128,6 +149,11 @@
               width: 48px;
               height: 48px;
               background-image: url(../../assets/img/quote.svg);
+              background-size: contain;
+              @include mobile {
+                width: 30px;
+                height: 30px;
+              }
             }
 
             cite,
@@ -142,6 +168,10 @@
               font-size: 24px;
               line-height: 36px;
               letter-spacing: 0.2px;
+              @include mobile {
+                font-size: 20px;
+                min-width: 334px;
+              }
             }
             cite {
               color: #30444e;
@@ -161,6 +191,10 @@
       border: 0;
       background-repeat: no-repeat;
       background-image: url("data:image/svg+xml,%3Csvg width='21' height='36' viewBox='0 0 21 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m21 3-3-3L0 18l18 18 3-3L6 18 21 3Z' fill='%23EE4248'/%3E%3C/svg%3E");
+      @include mobile {
+        position: absolute;
+        top: 25%;
+      }
     }
     .swiper-button-next {
       transform: rotate(180deg);

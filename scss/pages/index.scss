@@ -5,7 +5,8 @@
   margin-top: 100px;
   @include mobile {
     flex-direction: column-reverse;
-    padding: 55px 15px;
+    padding-top: 55px;
+    padding-bottom: 50px;
     margin: 0px;
     text-align: center;
     gap: 32px;
@@ -20,7 +21,6 @@
         font-weight: 500;
         font-size: 34px;
         line-height: 45px;
-        min-width: 370px;
       }
     }
     p {
@@ -33,14 +33,12 @@
       @include mobile {
         margin-top: 16px;
         margin-bottom: 16px;
-        min-width: 380px;
       }
     }
   }
-  // img {
-  //   max-width: 563px;
-  //   min-width: 360px;
-  // }
+  img {
+    width: 100%;
+  }
 }
 
 .welcome-pg {
@@ -102,7 +100,6 @@
     @include mobile {
       flex-direction: column;
       gap: 32px;
-      padding: 0px 26px;
     }
     .product-service-item {
       display: flex;

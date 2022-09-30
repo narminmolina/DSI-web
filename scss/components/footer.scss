@@ -10,8 +10,6 @@ footer {
       flex-direction: column;
       align-items: flex-start;
       gap: 32px;
-      padding-left: 26px;
-      padding-right: 30px;
     }
     .address-box {
       strong {
@@ -56,8 +54,8 @@ footer {
       display: grid;
       gap: 10px;
       @include mobile {
-        width: 355px;
         gap: 15px;
+        width: 100%;
       }
       .grid-row {
         display: flex;
@@ -67,7 +65,24 @@ footer {
         @include mobile {
           gap: 20px;
         }
-        img {
+        img[alt='silverlight'] {
+          @include mobile {
+            max-width: 113px;
+          }
+        }
+        img[alt='net'] {
+          @include mobile {
+            max-width: 98px;
+          }
+        }
+        img[alt='java'],
+        img [alt='ios'] {
+          @include mobile {
+            max-width: 66px;
+          }
+        }
+        img[alt='android'],
+        img[alt='blackberry'] {
           @include mobile {
             max-width: 122px;
           }

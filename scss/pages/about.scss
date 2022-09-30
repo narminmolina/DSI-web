@@ -1,11 +1,20 @@
 .about-jumbotron {
   background-color: #f2f2f2a6;
   padding: 80px 0px;
+  @include mobile {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 12px;
+  }
   .about-jumbotron-wrapper {
     display: flex;
     align-items: center;
     // *
     justify-content: space-between;
+    @include mobile {
+      flex-direction: column;
+      gap: 24px;
+    }
     h1 {
       max-width: 700px;
       font-weight: 400;
@@ -14,14 +23,23 @@
       color: #30444e;
       // *
       margin-bottom: 0;
+      @include mobile {
+        font-size: 32px;
+        line-height: 43px;
+        text-align: center;
+        color: $dark-grey;
+        width: 350px;
+      }
       strong {
         font-weight: 700;
-        //? font-style: normal;
       }
     }
     .large-logo {
       max-width: 700px;
-      height: 205px;
+      height: 100%;
+      @include mobile {
+        min-width: 235px;
+      }
     }
   }
 }
@@ -29,13 +47,18 @@
 .about-pg {
   margin-top: 60px;
   margin-bottom: 75px;
+  @include mobile {
+    margin-top: 24px;
+    margin-bottom: 20px;
+  }
   .curvy-line {
     &::after {
       margin-left: 0;
       margin-right: auto;
     }
   }
-  .about-title {
+  .about-title,
+  .DSI-title {
     font-weight: 500;
     font-size: 32px;
     line-height: 45px;
@@ -48,6 +71,9 @@
     text-align: justify;
     color: $dark-grey;
     margin-bottom: 0px;
+    @include mobile {
+      width: 358px;
+    }
     em {
       color: $red;
       font-weight: 500;
@@ -60,15 +86,45 @@
   background-color: #f7f7f7;
   padding: 45px 0px;
   margin-bottom: 50px;
+  @include mobile {
+    margin-bottom: 34px;
+    padding: 0px 12px;
+    background-color: $white;
+  }
 }
 .video-wrapper {
   display: flex;
   justify-content: space-between;
   gap: 80px;
+  @include mobile {
+    flex-direction: column;
+    gap: 35px;
+  }
+  .curvy-line {
+    &::after {
+      margin-left: 0;
+      margin-right: auto;
+      margin-bottom: 50px;
+      @include mobile {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .about-responsive-title {
+    display: none;
+    @include mobile {
+      display: block;
+    }
+  }
+
   .video-box {
     position: relative;
     max-width: 560px;
     max-height: 410px;
+    @include mobile {
+      width: 345px;
+      height: 256px;
+    }
     video {
       border-radius: 10px;
       width: 100%;
@@ -83,7 +139,9 @@
       position: absolute;
       left: 0;
       top: 0;
-
+      @include mobile {
+        width: 345px;
+      }
       .play-btn {
         background-image: url(../../assets/img/play-btn.svg);
         background-color: transparent;
@@ -105,6 +163,11 @@
   }
   .video-content {
     max-width: 475px;
+    .about-title {
+      @include mobile {
+        display: none;
+      }
+    }
     .curvy-line {
       &::after {
         margin-left: 0;
@@ -167,13 +230,16 @@
           line-height: 25px;
           margin: 0px;
           max-width: 470px;
+          @include mobile {
+            width: 340px;
+          }
         }
       }
       .video-box {
-        height: 365px;
+        height: 100%;
       }
       .overlay {
-        height: 365px;
+        height: 100%;
       }
     }
   }
@@ -183,13 +249,25 @@
   margin-top: 50px;
   margin-bottom: 135px;
   text-align: center;
+  @include mobile {
+    text-align: left;
+  }
   .curvy-line {
     margin-bottom: 35px;
+    @include mobile {
+      margin-right: auto;
+      margin-left: 0px;
+      max-width: 100%;
+    }
   }
   .contact-wrapper {
     display: flex;
     justify-content: space-between;
     gap: 60px;
+    @include mobile {
+      flex-direction: column;
+      gap: 28px;
+    }
   }
   .contact-items {
     // *
@@ -214,6 +292,9 @@
         width: 70px;
         height: 70px;
         display: inline-block;
+      }
+      @include mobile {
+        max-width: 255px;
       }
       .contact-item-content {
         display: flex;
@@ -257,6 +338,10 @@
   .map {
     width: 610px;
     height: 430px;
+    @include mobile {
+      width: 340px;
+      height: 240px;
+    }
     iframe {
       width: 100%;
       height: 100%;

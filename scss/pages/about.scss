@@ -28,6 +28,7 @@
         line-height: 43px;
         text-align: center;
         color: $dark-grey;
+        width: 350px;
       }
       strong {
         font-weight: 700;
@@ -319,6 +320,7 @@
     .address {
       &::before {
         background-image: url(../../assets/img/house.svg);
+        align-self: flex-start;
       }
     }
     .email {

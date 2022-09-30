@@ -75,6 +75,7 @@ let nav = document.querySelector('nav');
 
 navButton.addEventListener('click', (e) => {
   if (e.target == navButton) {
+    document.body.classList.toggle('lock-body');
     nav.classList.toggle('active-nav');
   }
 });

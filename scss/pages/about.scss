@@ -28,7 +28,6 @@
         line-height: 43px;
         text-align: center;
         color: $dark-grey;
-        width: 350px;
       }
       strong {
         font-weight: 700;
@@ -293,9 +292,7 @@
         height: 70px;
         display: inline-block;
       }
-      @include mobile {
-        max-width: 255px;
-      }
+
       .contact-item-content {
         display: flex;
         flex-direction: column;
